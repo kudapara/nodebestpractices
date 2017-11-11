@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Carefully choose your CI platform — Node best practices</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Carefully choose your CI platform — Node best practices">
+    <meta property="og:description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta property="og:image" content="https://github.io//nodepractices/images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Carefully choose your CI platform — Node best practices">
+    <meta name="twitter:description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta name="twitter:image" content="https://github.io/images/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/nodepractices/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/nodepractices/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/nodepractices/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/nodepractices/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/nodepractices/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/nodepractices/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/nodepractices/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/nodepractices/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/nodepractices/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/nodepractices/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/nodepractices/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/nodepractices/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/nodepractices/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <link rel="icon" href="/nodepractices/images/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Node best practices' rel='stylesheet' type='text/css'>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/nodepractices/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/nodepractices/js/vue.js"></script>
+    <script>window.PAGE_TYPE = "guide"</script>
+  </head>
+  <body class="docs">    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/nodepractices/">
+    <span>Node Best practices</span>
+  </a>
+  <ul id="nav">
+    <li class="nav-dropdown-container learn">
+  <a class="nav-link">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/nodepractices/project-structuring" class="nav-link">Project Structuring</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+<!--<li>
+  <a href="/nodepractices/v2/guide/team.html" class="nav-link team">Team</a>
+</li> -->
+<li>
+  <a href="https://github.com/i0natan/nodebestpractices/" target="_blank"><span class="fa fa-github"> @nodebestpractices</span></a>
+</li>
+<li>
+  <a href="https://twitter.com/nodepractices/" target="_blank"><span class="fa fa-twitter"> @nodepractices</span></a>
+</li>
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li class="nav-dropdown-container learn">
+  <a class="nav-link">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/nodepractices/project-structuring" class="nav-link">Project Structuring</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+<!--<li>
+  <a href="/nodepractices/v2/guide/team.html" class="nav-link team">Team</a>
+</li> -->
+<li>
+  <a href="https://github.com/i0natan/nodebestpractices/" target="_blank"><span class="fa fa-github"> @nodebestpractices</span></a>
+</li>
+<li>
+  <a href="https://twitter.com/nodepractices/" target="_blank"><span class="fa fa-twitter"> @nodepractices</span></a>
+</li>
+    </ul>
+    <div class="list">
+       <ul class="menu-root">
+  
+    
+    
+      
+        <li><h3>Project Structuring</h3></li>
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/index.html" class="sidebar-link">Structure by components</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/config-guide.html" class="sidebar-link">Use secure and hirearchical config</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/create-layers.html" class="sidebar-link">Layer your app</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/separate-express.html" class="sidebar-link">Separate Express 'app' and 'server'</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/wrap-utilities.html" class="sidebar-link">Wrap common utilities as NPM packages</a>
+    </li>
+  
+    
+    
+      
+      
+        <li><h3>Testing And Quality</h3></li>
+      
+    
+    <li>
+      <a href="/nodepractices/testingandquality/bumpversion.html" class="sidebar-link">Use secure and hirearchical config</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/testingandquality/citools.html" class="sidebar-link current">Carefully choose your CI platform</a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="content guide with-sidebar citools-guide">
+  
+    
+    
+  
+  
+    <h1>Carefully choose your CI platform</h1>
+  
+  <h2 id="One-Paragraph-Explainer"><a href="#One-Paragraph-Explainer" class="headerlink" title="One Paragraph Explainer"></a>One Paragraph Explainer</h2><p>The CI world used to be the flexibility of <a href="https://jenkins.io/" target="_blank" rel="external">Jenkins</a> vs the simplicity of SaaS vendors. The game is now changing as SaaS providers like <a href="https://circleci.com/" target="_blank" rel="external">CircleCI</a> and <a href="https://travis-ci.org/" target="_blank" rel="external">Travis</a> offer robust solutions including Docker containers with miniumum setup time while Jenkins tries to compete on ‘simplicity’ segment as well. Though one can setup rich CI solution in the cloud, should it required to control the finest details Jenkins is still the platform of choice. The choice eventually boils down to which extent the CI process should be customized: free and setup free cloud vendors allow to run custom shell commands, custom docker images, adjust the workflow, run matrix builds and other rich features. However if controlling the infrastructure or programming the CI logic using a formal programming language like Java is desired - Jenkins might still be the choice. Otherwise, consider opting for the simple and setup free cloud option</p>
+<h2 id="Code-Example-–-a-typical-cloud-CI-configuratin-Single-yml-file-and-that’s-it"><a href="#Code-Example-–-a-typical-cloud-CI-configuratin-Single-yml-file-and-that’s-it" class="headerlink" title="Code Example – a typical cloud CI configuratin. Single .yml file and that’s it"></a>Code Example – a typical cloud CI configuratin. Single .yml file and that’s it</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">version: <span class="number">2</span></div><div class="line">jobs:</div><div class="line">  build:</div><div class="line">    docker:</div><div class="line">      - image: circleci/node:<span class="number">4.8</span><span class="number">.2</span></div><div class="line">      - image: mongo:<span class="number">3.4</span><span class="number">.4</span></div><div class="line">    steps:</div><div class="line">      - checkout</div><div class="line">      - run:</div><div class="line">          name: Install npm wee</div><div class="line">          command: npm install</div><div class="line">  test:</div><div class="line">    docker:</div><div class="line">      - image: circleci/node:<span class="number">4.8</span><span class="number">.2</span></div><div class="line">      - image: mongo:<span class="number">3.4</span><span class="number">.4</span></div><div class="line">    steps:</div><div class="line">      - checkout</div><div class="line">      - run:</div><div class="line">          name: Test</div><div class="line">          command: npm test</div><div class="line">      - run:</div><div class="line">          name: Generate code coverage</div><div class="line">          command: <span class="string">'./node_modules/.bin/nyc report --reporter=text-lcov'</span>      </div><div class="line">      - store_artifacts:</div><div class="line">          path: coverage</div><div class="line">          prefix: coverage</div></pre></td></tr></table></figure>
+<h2 id="Circle-CI-almost-zero-setup-cloud-CI"><a href="#Circle-CI-almost-zero-setup-cloud-CI" class="headerlink" title="Circle CI - almost zero setup cloud CI"></a>Circle CI - almost zero setup cloud CI</h2><p><img src="https://github.com/i0natan/nodebestpractices/blob/master/assets/images/circleci.png" alt="alt text" title="API error handling"></p>
+<h2 id="Jenkins-sophisiticated-and-robust-CI"><a href="#Jenkins-sophisiticated-and-robust-CI" class="headerlink" title="Jenkins - sophisiticated and robust CI"></a>Jenkins - sophisiticated and robust CI</h2><p><img src="https://github.com/i0natan/nodebestpractices/blob/master/assets/images/jenkins_dashboard.png" alt="alt text" title="API error handling"></p>
+
+  
+    <div class="guide-links">
+      
+      
+    </div>
+  
+  <div class="footer">
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/i0natan/nodebestpractices/blob/master/src/testingandquality/citools.md" target="_blank">
+      Edit this page on Github!
+    </a>
+  </div>
+</div>
+
+        
+      </div>
+      <script src="/nodepractices/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/nodepractices/js/css.escape.js"></script>
+    <script src="/nodepractices/js/common.js"></script>
+
+    <!-- search 
+    <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/nodepractices/css/search.css">
+    <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <script>
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: 'BH4D9OD16A',
+      apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+      indexName: 'vuejs',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] }
+      })
+    }) -->
+    </script>
+
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>

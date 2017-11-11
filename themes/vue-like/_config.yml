@@ -1,0 +1,4 @@
+site_description: "The largest Node.JS best practices list. Curated from the top ranked articles and always updated"
+# google_analytics: UA-46852172-1
+root_domain: github.io
+vue_version: 2.5.1

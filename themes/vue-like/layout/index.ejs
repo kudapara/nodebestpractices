@@ -1,0 +1,32 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <div class="hero-logo">
+          <h1  style="margin:auto; color:green">NODE.JS</h1>
+          <h3  style="margin:auto; color:green">best practices</h3>
+      </div>
+    </div><div class="right">
+      <h2 class="vue">Node Best Practices</h2>
+      <h1>
+        The largest Node.JS best practices list. Curated from the top ranked articles and always updated
+      </h1>
+      <p>
+        <a class="button" href="<%- url_for("/project-structuring") %>">GET STARTED</a>
+        <a class="button white" href="https://github.com/i0natan/nodebestpractices" target="_blank">GITHUB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p>Released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a><br>
+  Theme adapted from <a href="https://github.com/vuejs/vuejs.org/tree/master/themes/vue">vuejs.org</a></p>
+</div>

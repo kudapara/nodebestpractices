@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Separate Express 'app' and 'server' — Node best practices</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Separate Express 'app' and 'server' — Node best practices">
+    <meta property="og:description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta property="og:image" content="https://github.io//nodepractices/images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Separate Express 'app' and 'server' — Node best practices">
+    <meta name="twitter:description" content="The largest Node.JS best practices list. Curated from the top ranked articles and always updated">
+    <meta name="twitter:image" content="https://github.io/images/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/nodepractices/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/nodepractices/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/nodepractices/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/nodepractices/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/nodepractices/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/nodepractices/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/nodepractices/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/nodepractices/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/nodepractices/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/nodepractices/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/nodepractices/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/nodepractices/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/nodepractices/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <link rel="icon" href="/nodepractices/images/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Node best practices' rel='stylesheet' type='text/css'>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/nodepractices/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/nodepractices/js/vue.js"></script>
+    <script>window.PAGE_TYPE = "guide"</script>
+  </head>
+  <body class="docs">    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/nodepractices/">
+    <span>Node Best practices</span>
+  </a>
+  <ul id="nav">
+    <li class="nav-dropdown-container learn">
+  <a class="nav-link">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/nodepractices/project-structuring" class="nav-link">Project Structuring</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+<!--<li>
+  <a href="/nodepractices/v2/guide/team.html" class="nav-link team">Team</a>
+</li> -->
+<li>
+  <a href="https://github.com/i0natan/nodebestpractices/" target="_blank"><span class="fa fa-github"> @nodebestpractices</span></a>
+</li>
+<li>
+  <a href="https://twitter.com/nodepractices/" target="_blank"><span class="fa fa-twitter"> @nodepractices</span></a>
+</li>
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li class="nav-dropdown-container learn">
+  <a class="nav-link">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/nodepractices/project-structuring" class="nav-link">Project Structuring</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+<!--<li>
+  <a href="/nodepractices/v2/guide/team.html" class="nav-link team">Team</a>
+</li> -->
+<li>
+  <a href="https://github.com/i0natan/nodebestpractices/" target="_blank"><span class="fa fa-github"> @nodebestpractices</span></a>
+</li>
+<li>
+  <a href="https://twitter.com/nodepractices/" target="_blank"><span class="fa fa-twitter"> @nodepractices</span></a>
+</li>
+    </ul>
+    <div class="list">
+       <ul class="menu-root">
+  
+    
+    
+      
+        <li><h3>Project Structuring</h3></li>
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/index.html" class="sidebar-link">Structure by components</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/config-guide.html" class="sidebar-link">Use secure and hirearchical config</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/create-layers.html" class="sidebar-link">Layer your app</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/separate-express.html" class="sidebar-link current">Separate Express 'app' and 'server'</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/project-structuring/wrap-utilities.html" class="sidebar-link">Wrap common utilities as NPM packages</a>
+    </li>
+  
+    
+    
+      
+      
+        <li><h3>Testing And Quality</h3></li>
+      
+    
+    <li>
+      <a href="/nodepractices/testingandquality/bumpversion.html" class="sidebar-link">Use secure and hirearchical config</a>
+    </li>
+  
+    
+    
+      
+      
+    
+    <li>
+      <a href="/nodepractices/testingandquality/citools.html" class="sidebar-link">Carefully choose your CI platform</a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="content guide with-sidebar separate-express-guide">
+  
+    
+    
+  
+  
+    <h1>Separate Express 'app' and 'server'</h1>
+  
+  <h2 id="One-Paragraph-Explainer"><a href="#One-Paragraph-Explainer" class="headerlink" title="One Paragraph Explainer"></a>One Paragraph Explainer</h2><p>The latest Express generator comes with a great practice that is worth to keep - the API declaration is separated from the network related configuration (port, protocol, etc). This allows testing the API in-process, without performing network calls, with all the benefits that it brings to the table: fast testing execution and getting coverage metrics of the code. It also allows deploying the same API under flexible and different network conditions. Bonus: better separation of concerns and cleaner code</p>
+<h2 id="Code-example-API-declaration-should-reside-in-app-js"><a href="#Code-example-API-declaration-should-reside-in-app-js" class="headerlink" title="Code example: API declaration, should reside in app.js"></a>Code example: API declaration, should reside in app.js</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app = express();</div><div class="line">app.use(bodyParser.json());</div><div class="line">app.use(<span class="string">"/api/events"</span>, events.API);</div><div class="line">app.use(<span class="string">"/api/forms"</span>, forms);</div></pre></td></tr></table></figure>
+<h2 id="Code-example-Server-network-declaration-should-reside-in-bin-www"><a href="#Code-example-Server-network-declaration-should-reside-in-bin-www" class="headerlink" title="Code example: Server network declaration, should reside in /bin/www"></a>Code example: Server network declaration, should reside in /bin/www</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app = <span class="built_in">require</span>(<span class="string">'../app'</span>);</div><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * Get port from environment and store in Express.</div><div class="line"> */</div><div class="line"></div><div class="line"><span class="keyword">var</span> port = normalizePort(process.env.PORT || <span class="string">'3000'</span>);</div><div class="line">app.set(<span class="string">'port'</span>, port);</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * Create HTTP server.</div><div class="line"> */</div><div class="line"></div><div class="line"><span class="keyword">var</span> server = http.createServer(app);</div></pre></td></tr></table></figure>
+<h2 id="Example-test-your-API-in-process-using-supertest-popular-testing-package"><a href="#Example-test-your-API-in-process-using-supertest-popular-testing-package" class="headerlink" title="Example: test your API in-process using supertest (popular testing package)"></a>Example: test your API in-process using supertest (popular testing package)</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">const</span> app = express();</div><div class="line"></div><div class="line">app.get(<span class="string">'/user'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</div><div class="line">  res.status(<span class="number">200</span>).json(&#123; <span class="attr">name</span>: <span class="string">'tobi'</span> &#125;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">request(app)</div><div class="line">  .get(<span class="string">'/user'</span>)</div><div class="line">  .expect(<span class="string">'Content-Type'</span>, /json/)</div><div class="line">  .expect(<span class="string">'Content-Length'</span>, <span class="string">'15'</span>)</div><div class="line">  .expect(<span class="number">200</span>)</div><div class="line">  .end(<span class="function"><span class="keyword">function</span> (<span class="params">err, res</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</div><div class="line">  &#125;);</div></pre></td></tr></table></figure>
+  
+    <div class="guide-links">
+      
+        <span>← <a href="/nodepractices/project-structuring/create-layers.html">Layer your app</a></span>
+      
+      
+    </div>
+  
+  <div class="footer">
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/i0natan/nodebestpractices/blob/master/src/project-structuring/separate-express.md" target="_blank">
+      Edit this page on Github!
+    </a>
+  </div>
+</div>
+
+        
+      </div>
+      <script src="/nodepractices/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/nodepractices/js/css.escape.js"></script>
+    <script src="/nodepractices/js/common.js"></script>
+
+    <!-- search 
+    <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/nodepractices/css/search.css">
+    <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <script>
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: 'BH4D9OD16A',
+      apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+      indexName: 'vuejs',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] }
+      })
+    }) -->
+    </script>
+
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>
