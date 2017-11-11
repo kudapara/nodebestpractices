@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Nodejs Best Practicesc</title>
   
-  <link href="/nodepractices/atom.xml" rel="self"/>
+  <link href="/nodebestpractices/atom.xml" rel="self"/>
   
   <link href="https://kudapara.github.io/nodebestpractices/"/>
   <updated>2017-11-11T18:08:46.685Z</updated>
